@@ -28,3 +28,4 @@ Step 4:
 Send a GET request to the "asset/query" endpoint by:
 curl --location --request GET 'http://127.0.0.1:4200/asset/query?id=1'
 
+Please note that kitex server is using the port "8888" and hertz server using the port "4200", so please keep these ports free for the demo servers to run.
