@@ -53,7 +53,12 @@ curl --location --request GET 'http://127.0.0.1:4200/asset/query?id=1'
 ```
 
 
-**Please note:** 
+
+
+**Please note:**
+
 -It is assumed that go is already installed in your system
 -Kitex server is using the port "8888" and Hertz server using the port "4200", so please keep these ports free for the demo servers to run. 
+
+
 [^1]: database : We are not current using an actual database in the demo. The data structure used is a go splice which acts as a makeshift database.
