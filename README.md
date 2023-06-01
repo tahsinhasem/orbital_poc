@@ -4,9 +4,10 @@ This is a repository for the Tiktok Orbital 2023 POC.
 
 
 ## About
-Our POC consists of communication[^3] between one Hertz server and one RPC server. The Hertz server is generated using the `asset_api.thrift` IDL file, while the Kitex server and client are generated using the `asset_management.thrift` IDL file.
+Our POC consists of communication1 between one Hertz server and one RPC server. The Hertz server is generated using the asset_api.thrift IDL file, while the Kitex server and client are generated using the asset_management.thrift IDL file.
 
-The Hertz server lisens to requests at `port 4200` on two exposed endpoints at "/asset/insert" [POST] and "/asset/query" [GET]. Once it recieves an api request, it then forwards the request to the Kitex server (using the internal kitex client built inside the hertz server). The Kitex server sits on `port 8888` and responds to the RPC calls made to it.
+
+The Hertz server listens to requests at port 4200 on two exposed endpoints at "/asset/insert" [POST] and "/asset/query" [GET]. Once it receives an API request, it then forwards the request to the Kitex server (using the internal Kitex client built inside the Hertz server). The Kitex server sits on port 8888 and responds to the RPC calls made to it.
 
 
 ## Endpoints
@@ -19,16 +20,13 @@ The Hertz server lisens to requests at `port 4200` on two exposed endpoints at "
 ## How to use? [^2]
 **Step 1:**
 
-Initialize kitex server using the command:
-"go run ."
-from the "./kitex_server" directory
+Initialise the Kitex server using the command: "go run ." from the "./kitex_server" directory
 
 
 **Step 2:**
 
-Initialize hertz server using the command:
-"go run ."
-from the "./hertz_server" directory
+Initialise the Hertz server using the command: "go run ." from the "./hertz_server" directory
+
 
 **Step 3:**
 
