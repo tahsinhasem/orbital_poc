@@ -3,7 +3,7 @@
 This is a repo for the code for the Tiktok Orbital 2023 POC.
 
 
-##About
+###About
 Our POC consists of communication between one Hertz server and one RPC server. The Hertz server is generated using the `asset_api.thrift` IDL file, while the Kitex server and client are generated using the `asset_management.thrift` IDL file.
 
 The Hertz server lisens to requests at `port 4200` on two exposed endpoints at "/asset/insert" [POST] and "/asset/query" [GET]. Once it recieves an api request, it then forwards it to the Kitex server using the its ineternalised kitex client. The Kitex server sits on `port 8888` and responds to the RPC calls made to it.
