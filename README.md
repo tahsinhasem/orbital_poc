@@ -9,7 +9,7 @@ Initialize kitex server using the command:
 from the "./kitex_server" directory
 
 Step 2:
-Initialize herts server using the command:
+Initialize hertz server using the command:
 "go run ."
 from the "./hertz_server" directory
 
