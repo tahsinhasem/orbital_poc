@@ -1,4 +1,4 @@
-# orbital_poc
+# Proof of concept - Orbital
 
 This is the orbital poc code.
 
