@@ -13,7 +13,7 @@ The Hertz server lisens to requests at `port 4200` on two exposed endpoints at "
 | Endpoint | Method | Description |
 | --- | --- | --- |
 | /asset/query | GET | Used to query about an asset, with its `id` speficied in the url query section |
-| /asset/insert | POST | Used to insert an new asset into the RPC database[^1] . Useage can be inferred from the tutorial below |
+| /asset/insert | POST | Used to insert an new asset into the RPC database[^1] . Usage can be inferred from the tutorial below |
 
 
 ## How to use? [^2]
