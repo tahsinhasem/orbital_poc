@@ -13,7 +13,7 @@ The Hertz server lisens to requests at `port 4200` on two exposed endpoints at "
 | Endpoint | Method | Description |
 | --- | --- | --- |
 |"/asset/query" | GET | Used to query about an asset, with its `id` speficied in the url query section |
-|"/asset/insert" | POST | Used to insert an new asset into the RPC 'database'[^1] . Useage can be inferred from the tutorial below |
+|"/asset/insert" | POST | Used to insert an new asset into the RPC database[^1] . Useage can be inferred from the tutorial below |
 
 
 ## How to use?
@@ -56,4 +56,4 @@ curl --location --request GET 'http://127.0.0.1:4200/asset/query?id=1'
 **Please note:** 
 -It is assumed that go is already installed in your system
 -Kitex server is using the port "8888" and Hertz server using the port "4200", so please keep these ports free for the demo servers to run. 
-[^1] database : We are not current using an actual database in the demo. The data structure used is a go splice which acts as a makeshift database.
+[^1]: database : We are not current using an actual database in the demo. The data structure used is a go splice which acts as a makeshift database.
