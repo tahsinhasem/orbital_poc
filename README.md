@@ -1,6 +1,6 @@
 # Proof of concept (POC) - Orbital
 
-This is a repo for the code for the Tiktok Orbital 2023 POC.
+This is a repository for the Tiktok Orbital 2023 POC.
 
 
 ## About
