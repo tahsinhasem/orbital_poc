@@ -4,7 +4,7 @@ This is a repo for the code for the Tiktok Orbital 2023 POC.
 
 
 ## About
-Our POC consists of communication between one Hertz server and one RPC server. The Hertz server is generated using the `asset_api.thrift` IDL file, while the Kitex server and client are generated using the `asset_management.thrift` IDL file.
+Our POC consists of communication[^3] between one Hertz server and one RPC server. The Hertz server is generated using the `asset_api.thrift` IDL file, while the Kitex server and client are generated using the `asset_management.thrift` IDL file.
 
 The Hertz server lisens to requests at `port 4200` on two exposed endpoints at "/asset/insert" [POST] and "/asset/query" [GET]. Once it recieves an api request, it then forwards it to the Kitex server using the its ineternalised kitex client. The Kitex server sits on `port 8888` and responds to the RPC calls made to it.
 
@@ -16,7 +16,7 @@ The Hertz server lisens to requests at `port 4200` on two exposed endpoints at "
 |"/asset/insert" | POST | Used to insert an new asset into the RPC database[^1] . Useage can be inferred from the tutorial below |
 
 
-## How to use?
+## How to use? [^2]
 **Step 1:**
 
 Initialize kitex server using the command:
@@ -53,12 +53,6 @@ curl --location --request GET 'http://127.0.0.1:4200/asset/query?id=1'
 ```
 
 
-
-
-**Please note:**
-
-* It is assumed that go is already installed in your system
-* Kitex server is using the port "8888" and Hertz server using the port "4200", so please keep these ports free for the demo servers to run. 
-
-
 [^1]: database : We are not current using an actual database in the demo. The data structure used is a go splice which acts as a makeshift database.
+[^2]: It is assumed that go is already installed in your system
+[^3]: Kitex server is using the port "8888" and Hertz server using the port "4200", so please keep these ports free for the demo servers to run. 
